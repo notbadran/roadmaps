@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float Part 3</title>
+
+    <style>
+      .container {
+        width: 300px;
+        margin: 50px auto;
+        border: 3px solid black;
+        padding: 10px;
+      }
+
+      .satu,
+      .dua,
+      .tiga {
+        width: 100px;
+        height: 200px;
+      }
+
+      .satu {
+        background-color: red;
+        float: left;
+      }
+
+      .dua {
+        background-color: green;
+        float: left;
+      }
+
+      .tiga {
+        background-color: blue;
+        float: right;
+      }
+
+      /**
+        * For modern browsers
+        * 1. The space content is one way to avoid an Opera bug when the
+        *    contenteditable attribute is included anywhere else in the document.
+        *    Otherwise it causes space to appear at the top and bottom of elements
+        *    that are clearfixed.
+        * 2. The use of `table` rather than `block` is only necessary if using
+        *    `:before` to contain the top-margins of child elements.
+        */
+      .cf:before,
+      .cf:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+      }
+
+      .cf:after {
+        clear: both;
+      }
+
+      /**
+        * For IE 6/7 only
+        * Include this rule to trigger hasLayout and contain floats.
+        */
+      .cf {
+        *zoom: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container cf">
+      <div class="satu"></div>
+      <div class="dua"></div>
+      <div class="tiga"></div>
+    </div>
+  </body>
+</html>

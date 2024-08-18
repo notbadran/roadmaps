@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  box-sizing: border-box;
+  background-color: #fff;
+  line-height: 27px;
+  color: #333;
+}
+
+header {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 9;
+}
+
+header .hero {
+  background-color: green;
+  height: 280px;
+  background-image: url(../img/3.png);
+  background-position: -100px -420px;
+  position: relative;
+}
+
+header .hero p {
+  position: absolute;
+  font-size: 30px;
+  color: #eaeaea;
+  top: 50%;
+  left: 30%;
+}
+
+header .captionHero p {
+  text-align: center;
+  background-color: green;
+  margin-top: -50px;
+}
+
+header .profile {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin: -50px auto;
+  position: relative;
+  background-image: url(../img/2.png);
+  background-size: cover;
+}
+
+header .profile:hover {
+  cursor: pointer;
+}
+
+header .nama h1 {
+  text-align: center;
+  margin-top: 55px;
+}
+
+header .nama h1:hover {
+  cursor: pointer;
+}
+
+header .nama p {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom: 1000px;
+  padding: 10px;
+  margin: 50px auto;
+}
+
+.container .kotak {
+  margin: -20px auto;
+  width: 700px;
+  height: 400px;
+  background-color: white;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.kotak .gambar {
+  height: 190px;
+  background-color: black;
+  background-image: url(../img/4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -200px;
+  overflow: hidden;
+  border-radius: 10px 10px 2px 2px;
+}
+
+.kotak .gambar:hover {
+  cursor: pointer;
+}
+
+.kalimat h2 {
+  padding: 15px;
+}
+
+.kalimat h2:hover {
+  opacity: 0.8;
+  color: rgb(71, 70, 70);
+  cursor: pointer;
+}
+
+.kalimat p {
+  padding: 15px;
+  margin-top: -10px;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.kalimat .tanggal p {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+footer {
+  margin: 100px auto;
+  text-decoration: overline;
+}
