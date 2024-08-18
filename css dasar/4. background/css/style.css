@@ -1,0 +1,21 @@
+body {
+    background-color: lightblue;
+    background-image: url(../img/5.png);
+    background-repeat: no-repeat;
+    /* background-position: repeat-x;
+    background-position: repeat-y; */
+    background-size: cover;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    line-height: 1.8em;
+    text-align: center;
+    letter-spacing: 1px;
+}

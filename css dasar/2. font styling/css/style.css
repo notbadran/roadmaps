@@ -1,0 +1,15 @@
+body {
+    font-family: 18px Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: lightblue;
+    text-align: center;
+    font-weight: normal;
+    font-variant: small-caps;
+}
+
+p {
+    text-align: center;
+    line-height: 2em;
+}

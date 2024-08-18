@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.1em;
+            background-color: #eaeaea;
+        }
+
+        .container {
+            width: 75%;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+        }
+
+        header h1 {
+            text-align: center;
+            text-decoration: overline;
+        }
+
+        h1,h2 {
+            color: #333;
+        }
+
+        nav ul li:nth-child(2) a {
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: line-through;
+        }
+
+        /* nav ul li:nth-child(even) a {
+            font-family: Arial, Helvetica, sans-serif;
+        } */
+
+        nav ul li {
+            margin: 20px;
+            list-style: circle;
+            display: inline-block;
+        }
+
+        nav ul {
+            text-align: center;
+        }
+
+        nav ul li a{
+            color: #6f6a6a;
+            text-decoration: none;
+            font-weight: 800;
+        }
+
+        nav ul li a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.2em;
+        }
+
+        p:first-of-type {
+            text-indent: 100px;
+            color: #6f6a6a;
+        }
+
+        p mark {
+            background-color: rgb(152, 133, 133);
+            opacity: 1;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+    <header>
+        <h1>Pseudo Class</h1>
+    </header>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link2</a></li>
+            <li><a href="#">Link3</a></li>
+            <li><a href="#">Link4</a></li>
+            <li><a href="#">Link5</a></li>
+            <li><a href="#">Link6</a></li>
+            <li><a href="#">Link7</a></li>
+            <li><a href="#">Link8</a></li>
+            <li><a href="#">Link9</a></li>
+            <li><a href="#">Link10</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <main>
+        
+        <h2>Lorem ipsum dolor tetur adipisicing elit. Cupiditate, perferendis?</h2>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero aliquam ullam soluta ex, et facilis dolores aperiam ea rerum? Quibusdam neque exercitationem deleniti voluptatem fugiat consequatur eveniet veritatis laudantium enim.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur <mark>dipisicing elit  a Atque similique quidem ut molestias!</mark> Culpa minima vel, distinctio facere ea totam cupiditate rerum. Eaque dolor laboriosam necessitatibus, voluptate accusantium officiis quae!</p>
+    </main>
+</div>
+    
+</body>
+</html>
