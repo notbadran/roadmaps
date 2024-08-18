@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<body>
+    <!-- tabel ini dibagi menjadi 2 yaitu:
+    tabel yang kompleks dan tabel yang singkat.
+
+    tag table ini juga memiliki attributnya sendiri, diantaranya adalah:
+    - border: menambahkan border
+    - cellspacing: jarak antar cell (ketebalannya)
+    - cellpadding: luas antar cell
+    
+        //tiga di atas lebih baik menggunakan css
+
+    - colspan: untuk menggabungkan 2 kolom atau lebih
+    - rowspan: untuk menggabungkan 2 baris atau lebih
+        //dua attribut ini digunakan untuk melakukan merging
+
+    -->
+
+    <!-- membuat tabel simpel -->
+    <table border="3"cellspacing="0"cellpadding="5">
+        <tr>
+            <td>baris 1, kolom 1</td>
+            <td>baris 2, kolom 2</td>
+        </tr>
+        <tr>
+            <td>baris 2, kolom 1</td>
+            <td>baris 2, kolom 2</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>tabel sederhana</th>  
+                <!-- untuk judul utama (nama tabel) sebenernya bisa juga di gunakan sebagai header judul pada umumnya -->
+                <th>kolom 1</th>
+                <th>kolom 2</th>
+                <!-- sama seperti di atas  -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>baris 1</th> <!-- header samping -->
+                <td>baris 1, kolom 1</td>
+                <td>baris 1, kolom 2</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <th>baris 2</th> <!-- header samping -->
+                <td>baris 2, kolom 1</td>
+                <td>baris 2, kolom 2</td>
+            </tr>
+        </tbody>
+
+        <!-- membuat 2 tbody karena membuat baris baru dalam tabel contoh jika ingin membuat baris ketiga -->
+
+        <tbody>
+            <tr>
+                <th>baris 3</th> <!-- header samping -->
+                <td>baris 3, kolom 1</td>
+                <td>baris 3, kolom 2</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,13 @@
+html konsep dan pendahuluan
+
+html (hypertext markup languange) disebut demikian karena di dalamnya terdapat serangkaian markup yg nantinya akan disebut sebagai tag, yg mana akan memberi tahu si browser bagaiamana sebuah konten akan di tampilkan.
+
+
+tim berners-lee menemukan
+- http
+- html
+- www
+- web browser
+- web server page
+- web page
+

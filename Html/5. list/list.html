@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list</title>
+</head>
+<body>
+    <!-- ol, ul, dl
+    
+        ol: order list
+        ul: unorder list
+        dl: definition list
+    -->
+
+    <h3>to do list</h3>
+    <ol>
+        <li>bangun</li>
+        <li>ke air</li>
+        <li>makan dan minum</li>
+        <!-- li adalah list item -->
+    </ol>
+
+    <!-- ol default nya adalah mengurutkan dengan angka, jadi seperti ini
+    1. ---
+    2. ---
+    3. --- dst,
+    kita bisa mengubahnya dengan cara menambahkan type didalamnya seperti berikut ini, ada lima macam jenis yg bisa digunakan
+    -->
+
+    <h3>makan</h3>
+    <ol type="i">
+        <li>ambil piring</li>
+        <li>isi nasi</li>
+        <li>makan</li>
+    </ol>
+    
+    <!-- --------------------- -->
+
+    <h3>makanan makanan</h3>
+    <!-- ul tidak berurut jadi tidak akan mempengruhi urutan -->
+    <!-- ul memiliki banyak tipe tepatnya tiga macam seperti ol yaitu disc,square dan circle contoh menggunakannya sebagai berikut -->
+    <ul type="circle">
+        <li>dimsum</li>
+        <li>sate taichan</li>
+        <li>ayam pojles</li>
+    </ul>
+
+    <!-- ---------------------- -->
+    <!-- definition list digunakan untuk membuat terminologi dan deskripsi jadi isinya berpasangan seperti berikut:
+        
+        <dl>
+            <dt>term 1</dt>
+            <dd>description 1</dd>
+            <dt>term 2</dt>
+            <dd>description 2</dd>
+            ...
+        </dl>
+    -->
+
+    <h3>pemrograman web 1</h3>
+    <dl>
+        <dt>Html</dt>
+        <dd>hypertext markup languange</dd>
+        <dt>css</dt>
+        <dd>cascading style sheet</dd>
+    </dl>
+
+    <!-- 
+        dengan menggunakan dl maka output nya akan secara otomatis menambahkan indentasi, output kode di atas adalah sebagai berikut:
+        
+        html
+            hypertext markup languange
+        css
+            cascading style sheet
+
+            //bisa juga dibuat tebal html dan css nya dengan menambahkan properti css atau attribut strong seperti di atas sebelum ini.
+     -->
+
+
+    
+
+</body>
+</html>
