@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font face</title>
+
+    <!-- link google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* font offline */
+      @font-face {
+        font-family: "muelerhoff";
+        src: url(font/HerrVonMuellerhoff-Regular.ttf) format("truetype");
+      }
+
+      /* font family yang diisi adalah nama bebas yang diberikan yang nanti akan di panggil dalam font family pada syntaq di bawah ini */
+
+      /* span {
+            display: inline-block;
+            background-color: green;
+            margin: 10% auto;
+        } */
+
+      .container {
+        margin: 100px auto;
+        border: 2px double rgba(0, 0, 0, 0.3);
+        width: 750px;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 50px;
+        font-family: "Tangerine", cursive;
+      }
+
+      hr {
+        width: 200px;
+        margin-top: -20px;
+        border-top: 3px solid rgba(0, 0, 0, 0.3);
+      }
+
+      p {
+        text-align: center;
+        line-height: 2;
+        width: 700px;
+        margin: auto;
+        font-size: 20px;
+        font-family: muelerhoff;
+        /* di atas adalah font-face offline yang kita buat */
+
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <span>
+        <h1>Hello World</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, illum. Ratione voluptatum aperiam consectetur similique! Tenetur dolores fugiat voluptatibus rem suscipit doloribus sequi quam laudantium expedita aut soluta numquam, iusto quisquam tempora debitis perspiciatis quidem eum labore error! Minima voluptatibus voluptatem voluptas asperiores, iure ipsa sequi cum itaque ex neque fuga recusandae, expedita magni reprehenderit consequuntur accusantium? Temporibus officia, qui beatae omnis illo quis fuga incidunt ab adipisci exercitationem perspiciatis?
+        </p>
+    </span> -->
+
+    <div class="container">
+      <h1>DB</h1>
+      <hr />
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur,
+        illum. Ratione voluptatum aperiam consectetur similique! Tenetur dolores
+        fugiat voluptatibus rem suscipit doloribus sequi quam laudantium
+        expedita aut soluta numquam, iusto quisquam tempora debitis perspiciatis
+        quidem eum labore error! Minima voluptatibus voluptatem voluptas
+        asperiores, iure ipsa sequi cum itaque ex neque fuga recusandae,
+        expedita magni reprehenderit consequuntur accusantium? Temporibus
+        officia, qui beatae omnis illo quis fuga incidunt ab adipisci
+        exercitationem perspiciatis?
+      </p>
+    </div>
+  </body>
+</html>

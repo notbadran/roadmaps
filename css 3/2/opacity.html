@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background-color: aquamarine;
+        background-image: url(../2/img/1.jpg);
+      }
+
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        position: relative;
+        opacity: 0.7;
+      }
+
+      div.satu {
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+        position: absolute;
+        right: -20px;
+        top: 170px;
+        opacity: 1;
+      }
+
+      /* catatan
+        dengan kode diatas dapat di ketahui bahwa jika menggunakan opacity pada parent maka akan ikut mempengatuhi childnya, jadi meskipun parent memiliki nilai opacity dan child diberikan nilai 1 (100) tanpa opacity akan tetap membuatnya memiliki opacity terhadap body namun memiliki nilai 1 tadi terhadap parent bukan body,
+        dengan kata lain body akan tetap terkena opacity dari parentnya tapi child menjadi sebuah nilai solid pada parent 
+        */
+
+      /* tambahan 
+        jika tidak ingin mempengaruhi element lainnya maka gunakanlah rgba, perlu di ketahui rgba hanya bekerja pada warna, tidak bekerja pada gambar (dalam hal transparansi)
+        */
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="satu"></div>
+    </div>
+  </body>
+</html>
