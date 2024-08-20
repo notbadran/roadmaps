@@ -1,0 +1,210 @@
+@font-face {
+  font-family: conforterBrush;
+  src: url(../font/ComforterBrush-Regular.woff);
+}
+
+body {
+  /* background-color: #eaeaee; */
+  background-color: #222;
+  /* background-image: linear-gradient(black,darkblue); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  font-size: 18px;
+  line-height: 36px;
+  font-family: "Dosis", sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin: 100px 0;
+  font-family: conforterBrush;
+  color: white;
+  /* text-shadow: 1px 1px 1px rgba(0, 0, 0, .6); */
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px 8px rgba(0, 0, 0, 0.9);
+  border-radius: 20px;
+}
+
+.gallery li {
+  width: 120px;
+  height: 120px;
+  border: 3px solid rgb(255, 255, 255);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  display: block;
+  margin: 1px;
+  position: relative;
+  float: left;
+  margin-left: 18px;
+  overflow: hidden;
+}
+
+.gallery li img {
+  border-radius: 50%;
+  /* overflow: hidden; */
+  margin: auto;
+  /* border: 3px solid rgb(163, 98, 225); */
+}
+
+.gallery li span {
+  width: 120px;
+  display: block;
+  height: 120px;
+  /* background-color: rgba(108, 103, 103, 0.5); */
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 120px;
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
+  opacity: 0;
+  transition: 300ms;
+  transform: rotate(0);
+}
+
+.gallery a:hover span {
+  opacity: 1;
+  transform: rotate(360deg);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.clear {
+  clear: both;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  text-align: center;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  padding: 60px 0;
+  box-sizing: border-box;
+}
+
+.overlay:target {
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: auto;
+  height: auto;
+}
+
+.overlay img {
+  max-height: 100%;
+  box-shadow: 0 0px 2px 2px rgba(0, 0, 0, 0.5),
+    0 0px 3px 3px rgba(255, 255, 255, 0.8);
+  border: 5px solid white;
+  /* padding: 5px; */
+  margin: 5px;
+}
+
+.overlay:target img {
+  animation: fadeIn 0.5s forwards;
+}
+
+.close {
+  position: absolute;
+  top: 35px;
+  color: white;
+  right: 370px;
+  text-decoration: none;
+}
+
+.overlay:target .close {
+  animation: closeAni 0.8s forwards;
+}
+
+.prev {
+  /* background-image: url(../img/kanan.png); */
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-image: url(../img/kiri.svg);
+  top: 45%;
+  right: 70%;
+  /* bottom: 50%; */
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.prev,
+.next {
+  transition: 0.4s;
+}
+
+.next {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-image: url(../img/kanan.svg);
+  top: 45%;
+  left: 70%;
+  /* bottom: 50%; */
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+  /* opacity: 0; */
+}
+
+.next:hover,
+.prev:hover {
+  /* opacity: 1; */
+  transform: scale(0.7);
+}
+
+/* .overlay:target .prev,
+.overlay:target .next {
+    animation: buttonAni .8s forwards;
+} */
+
+@keyframes fadeIn {
+  0% {
+    /* width: 0; */
+    transform: scale(1);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes closeAni {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes buttonAni {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
