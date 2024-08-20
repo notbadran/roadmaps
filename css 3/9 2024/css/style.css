@@ -1,0 +1,72 @@
+/* font */
+@font-face {
+  font-family: "alex";
+  src: url(../font/ComforterBrush-Regular.woff);
+}
+
+/* main style */
+body {
+  font-family: "alex";
+  font-size: 18px;
+  line-height: 36px;
+  background-color: #eee;
+}
+
+h1 {
+  font-size: 80px;
+  margin: 50px auto;
+  text-align: center;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+.container {
+  width: 600px;
+  background-color: #fff;
+  margin: auto;
+  padding: 25px;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.gallery li {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  /* overflow: hidden; */
+  border: 5px solid rgb(135, 193, 135);
+  float: left;
+  margin-right: 20px;
+  position: relative;
+}
+
+.gallery li img {
+  border-radius: 50%;
+}
+
+.gallery li span {
+  display: block;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(200, 200, 200, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  line-height: 120px;
+  color: rgb(135, 193, 135);
+  text-shadow: 2px 2px 2px #666;
+  font-weight: 500;
+  font-size: 28px;
+  opacity: 0;
+  transform: scale(0);
+  transition: 300ms;
+}
+
+.gallery li:hover span {
+  opacity: 1;
+  transform: scale(1) rotate(360deg);
+}
+
+.clear {
+  clear: both;
+}
