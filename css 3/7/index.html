@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <!-- 
+        transisi #1 
+    
+        transition:
+        [property] <*durasi> [fungsi] [delay];
+
+        *simpan transisi selalu dalam keadaan awal, sama seperti kasus sebelumnya.
+        Property dari [property] meliputi:
+            - all
+            - nama properti
+            - none
+        jika dalam baris code syntaq default/tidak di spesifikan maka nilai property adalah all, contoh:
+            
+            `transition: 1s;` //tanpa perlu dituliskan propertinya, sudah memiliki nilai default `all` (untuk semua element.)
+
+    -->
+
+    <style>
+
+        .container {
+            width: 700px;
+            border: 3px double #000;
+            min-height: 300px;
+            margin: 50px auto 0;
+            border-radius: 20px;
+            box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, .4);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .bulat {
+            width: 150px;
+            height: 150px;
+            margin-top: 70px;
+            margin-left: 20px;
+            background-color: black;
+            /* border-radius: 0px; */
+            transition: 1.2s;
+        }
+        
+        /* span {
+            border: 1px solid black;
+            background-color: antiquewhite;
+        } */
+         
+        span:hover .bulat {
+            transform: translateX(500px) rotate(90deg);
+            /* transform: rotate(90deg); */
+            border-radius: 50%;
+            background-color: gray;
+            /* margin-left: 500px; */
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>Requiem de morta</h1>
+
+        <span>
+            <div class="bulat"></div>
+        </span>
+        
+    </div>
+
+</body>
+</html>

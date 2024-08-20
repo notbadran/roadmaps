@@ -1,0 +1,95 @@
+body {
+    background-color: #eaeaea;
+}
+
+.container {
+    width: 30%;
+    margin: 100px auto;
+    box-sizing: border-box;
+    /* border-left: 1px solid black; */
+    padding: 10px;
+    box-shadow: -2px 1px 5px rgba(0, 0, 0, .3);
+    background-color: #eee;
+    position: relative;
+}
+
+h1 {
+    text-align: left;
+    font-size: 25px;
+    margin-left: 2px;
+}
+
+hr {
+    width: 240px;
+    margin-left: 2px;
+    margin-top: -5px;
+}
+
+
+
+.kotak {
+    width: 70%;
+    margin-left: 10px;
+}
+
+.kotak p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.animasi {
+    width: 70px;
+    height: 70px;
+    background-color: salmon;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    animation: myAnimation 3s 2 alternate;
+}
+
+.wadah {
+    position: absolute;
+    /* background-color: aqua; */
+    top: 20px;
+    width: 10%;
+    height: 200px;
+}
+
+/* .wadah:hover .animasi {
+    animation: myAnimation 5s alternate;
+} */
+
+
+
+/* keyframes breakpoint */
+
+@keyframes myAnimation {
+    
+    0% {
+        width: 70px;
+        height: 70px;
+        top: 20px;
+        left: 20px;
+    }
+
+    25% {
+        top: 200px;
+        left:20px;
+        width: 350px;
+        /* height: 200px; */
+    }
+
+    50% {
+        top: 350px;
+        left: 10px;
+        width: 70px;
+        height: 70px;
+    }
+
+    75% {
+        top: 400px ;
+        left: 10px;
+        width: 300px;
+        height: 200px;
+    }
+    
+}

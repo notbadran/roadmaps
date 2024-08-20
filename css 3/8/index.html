@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- 
+        properti yang bisa diberikan pada animation:
+        [name] [duration] [timing-function] [delay] [iteration-count] [direction] [fill-mode] [play-sate]
+
+        penulisan `animation:` pada baris code adalah sebuah shorthand, sebenarnya properti properti diatas bisa kita tulis satu persatu, contoh:
+        
+            `animation-name: animasiSatu;`
+            dst..
+
+        //iteration-count
+            properti ini menentukan akan di ulang berapa kali/sebanyak apa animasi itu di putar, contoh menggunakan iteration-count ddengan shorthand sebagai berikut:
+          
+            `animation: AnimasiSatu 2s ease "2";` //artinya animasi akan di ulang sebanyak 2x
+        
+            - iteration count ini hanya memiliki 2 value yaitu:
+                a. dengan `angka`
+                b. " infinite "
+        
+        //direction
+            direction digunakan untuk menentukan dr mana awal animasi dimulai.
+
+            - direction memiliki 4 value yaitu:
+                a. normal (nilai default)
+                b. reverse (animasi dilakukan dari akhir -> awal)
+                c. alternate (dr awal ke akhir lalu dr akhir ke awal)
+                d. alternate-reverse (kebalikan dr alternate)
+            
+            contoh menggunakannya dalam shorthand adalah seperti berikut ini
+                `animation: animasiSatu 2s ease-in 2 alternate;` 
+        
+        //fill-mode
+            fill mode digunakan untuk menentukan titik akhir dr transisi yang digunakan (mau berakhir dimana transisi yang berjalan)
+
+            - fill-mode mempunyai 4 value yaitu:
+                
+                a. none
+                b. forwards
+                c. backwards
+                d. both
+        
+            //play-state
+                
+                - 2 value yaitu
+                RUNNING | PAUSED
+     -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>My redemption song</h1>
+      <hr />
+      <div class="kotak">
+        <p>
+          Lorem ipsum dolor sicing elit. Ea pariatur, laborum vel labore
+          similique facilis, rerum minima quas eaque corporis, molestiae cum
+          delectus dolores! Voluptate, perferendis. Ratione perferendis
+          exercitationem veritatis.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iusto
+          nam corrupti neque velit culpa, nihil odio vitae, architecto
+          perferendis alias molestiae quaerat dicta, deleniti provident!
+          Ratione, explicabo. Praesentium!
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          beatae aliquam a voluptatum, at architecto qui ipsam possimus omnis
+          numquam?
+        </p>
+      </div>
+    </div>
+
+    <div class="wadah">
+      <div class="animasi"></div>
+    </div>
+  </body>
+</html>

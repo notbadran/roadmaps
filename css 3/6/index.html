@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transform</title>
+    <!-- mencoba 4 fungsi transform yaitu:
+    
+        - schale: untuk memperbesar atau memperkecil   (angka)
+        - rotate: untuk memutar (deg)
+        - skew: membuat condong atau miring (deg)
+        - translate: mengubah posisi    (px)
+
+        semua fungsi transform diatas mempunyai nilai x dan y, contoh:
+        schale(x,y);.
+
+        selain daripada itu transform ini dapat dibuat menjadi multiple, 'membuat keempat fungsi itu menjadi satu baris code', contoh:
+            
+            transform: schale(x,y), rotateX(x), schaleY(y), translate(x,y);
+    -->
+
+    <style>
+      body {
+        min-height: 1000px;
+      }
+
+      div {
+        width: 150px;
+        height: 50px;
+        margin: 100px auto 0;
+        background-color: lightskyblue;
+        border-radius: 10px;
+        box-sizing: border-box;
+        transition: 1s;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 20px;
+        line-height: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+      }
+
+      .schalee {
+        /* transform: scale(2); memperbesar 2x lipat */
+        /* transform: scale(.5); memperkecil setengahnya */
+
+        transition: 0.5s;
+        /* transisi diberikan bukan di hover agar saat keadaan tidak di sedang di meng hover element tidak akan kembali pada ukuran pertama secara instan tapi ada transisinya juga */
+      }
+
+      .schalee:hover {
+        transform: scale(3, 4);
+        /* membuat ukuran sumbu x menjadi 3 dan sumbu y menjadi 2 */
+      }
+
+      .rotatee:hover {
+        /* transform: rotate(30deg); */
+        transform: rotateX(170deg) rotateY(130deg);
+      }
+
+      .skeww {
+        /* transform: skew(30deg); */
+        transition: 0.5s;
+      }
+
+      .skeww:hover {
+        /* transform: skew(40deg); */
+        /* transform: skew(40deg, 20deg); */
+        /* transform: skewY(70deg); */
+        transform: skewX(20deg) skewY(40deg);
+      }
+
+      .container {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 20px;
+      }
+
+      .translatee {
+        transition: 0.5s;
+        background-color: red;
+      }
+
+      .container:hover .translatee {
+        /* transform: translate(100px, 200px); */
+        transform: translateX(-200px);
+        /* transform: translateY(200px); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="schalee">
+      <h1>schale</h1>
+    </div>
+    <div class="rotatee">
+      <h1>rotate</h1>
+    </div>
+    <div class="skeww">
+      <h1>skew</h1>
+    </div>
+
+    <div class="container">
+      <p>arahkan kursor pada kotak besar</p>
+      <div class="translatee">
+        <h1>translate</h1>
+      </div>
+    </div>
+  </body>
+</html>
