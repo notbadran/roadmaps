@@ -26,9 +26,10 @@ h1 {
   padding: 25px;
   box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
+  /* box-sizing: border-box; */
 }
 
-.gallery li {
+.container .gallery li {
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -39,11 +40,11 @@ h1 {
   position: relative;
 }
 
-.gallery li img {
+.container .gallery li img {
   border-radius: 50%;
 }
 
-.gallery li span {
+.container .gallery li span {
   display: block;
   width: 120px;
   height: 120px;
@@ -62,11 +63,86 @@ h1 {
   transition: 300ms;
 }
 
-.gallery li:hover span {
+.container .gallery li:hover span {
   opacity: 1;
   transform: scale(1) rotate(360deg);
 }
 
 .clear {
   clear: both;
+}
+
+/* overlay */
+
+.container .overlay {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 99;
+  transition: 0.5s;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 100px;
+}
+
+.overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.container .gallery .overlay img {
+  max-height: 100%;
+  border-radius: 0;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+.overlay:target img {
+  animation: zoomDanFade 0.8s;
+}
+
+.overlay .close {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  left: 0;
+  color: white;
+  text-decoration: none;
+  font-family: serif;
+  opacity: 0;
+}
+
+.overlay:target .close {
+  animation: tombolClose 0.5s 0.8s forwards;
+}
+
+/* animasi */
+@keyframes zoomDanFade {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes tombolClose {
+  0% {
+    opacity: 0;
+    margin-bottom: 50px;
+  }
+
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
 }
