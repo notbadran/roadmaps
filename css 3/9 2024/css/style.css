@@ -122,7 +122,46 @@ h1 {
   animation: tombolClose 0.5s 0.8s forwards;
 }
 
+.overlay:target .next,
+.overlay:target .previ {
+  animation: tombolNextPrev 0.5s forwards;
+}
+
+/* tombol next dan prev */
+.overlay .next,
+.overlay .previ {
+  position: absolute;
+  /* background-color: #666; */
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  top: 60%;
+  right: 30%;
+  text-indent: -9999px;
+  z-index: 5;
+  opacity: 0;
+}
+
+.overlay .previ {
+  background-image: url(../img/kiri.svg);
+}
+
+.overlay .next {
+  background-image: url(../img/kanan.svg);
+  top: 50%;
+}
+
 /* animasi */
+@keyframes tombolNextPrev {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes zoomDanFade {
   0% {
     transform: scale(0);
