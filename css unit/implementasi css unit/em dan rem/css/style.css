@@ -1,0 +1,65 @@
+body {
+  font-family: "Edu TAS Beginner", cursive;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  text-align: center;
+  background-color: #eee;
+  line-height: 1.6;
+  font-weight: 300;
+  min-height: 2000px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.typography {
+  display: flex;
+}
+
+.typography .col {
+  flex: 1;
+  margin: 0 0 0.5em;
+  padding: 0 0 0.5em;
+}
+/* 
+.typography .col.col-em {
+}
+
+.typography .col.col-em h2 {
+    font-size: 4em;
+
+}
+
+.typography .col.col-em p {
+    font-size: .9em;
+    /* text-align: justify; */
+
+.length .btn {
+  display: inline-block;
+  background-color: #111;
+  text-decoration: none;
+  padding: 1em 3em;
+  font-weight: 700;
+  color: white;
+}
+
+.length .btn.btn-sm {
+  font-size: 0.5em;
+}
+
+.length .btn.btn-lg {
+  font-size: 2em;
+}
+
+/* penjelasan, jadi yg btn ini dikasih nilai padding 1em dan 3em, nilai default dari 1em itu 16px jadi 3em itu 16x3 = 48px.
+
+nah untuk yg btm small (sm), diberi nilai 0.5em (font size) artinya setengah dari 16px jadi nilaimya adalah 8 em dan kiri kanan paddingnya adalah 24px, knp 24 karena itu adalah nilai setengah dari 3em (48px) gitu.
+
+dan untuk yg btn large(lg) cara menghitungnya sama tinggal 2em dari 1em element btn reguler, kok element btn smallnya tidak ikut cascading/ditumpuk? karena ini merupakan sifat dari em jika digunakan pada padding/margin (ya dimensionlah).
+jadi nilainya 32 dan 96 
+
+
+BERLAKU JIKA TIDAK ADA FONT SIZE PADA ELEMENT JIKA ADA FZ MAKA YG DIHITUNG YA FZNYA
+*/

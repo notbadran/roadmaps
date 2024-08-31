@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>em</title>
+  </head>
+
+  <style>
+    .box {
+      font-size: 30px;
+    }
+
+    .box h1 {
+      font-size: 1em;
+    }
+
+    .box p {
+      font-size: 2em;
+    }
+  </style>
+
+  <body>
+    <div class="box">
+      <h1>Hello World</h1>
+      <p>Web programming unpas</p>
+    </div>
+
+    <!-- 
+        penjelasan:
+        liahtlah ukuran parent dan child pada kelas box
+        pada parent (kelas box) diberikan nilai sebesar 30px
+        dan childnya yaitu h1 dan p diberikan nilai sebesar 1em dan 2em
+
+        nilai em akan mengambil dari nilai seberapa besar nilai dari parentnya, seperti pada h1 dengan nilai 1em itu artinya sama dengan nilai pada sang parent(kelas box) dengan nilai 30px
+
+        sedangkan pada p,
+        diberikan nilai sebesar 2em yang artinya 2x lipat dari nilai parent yang artinya p memiliki nilai sebesar 60px
+
+        em juga dapat diberi nilai .2 .9 0.9 dst
+     -->
+  </body>
+</html>
