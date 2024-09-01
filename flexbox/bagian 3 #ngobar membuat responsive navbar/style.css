@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap');
+
+body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: rgb(147, 91, 199);
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    align-items: center;
+    /* padding: 20px; */
+}
+
+nav .logo {
+    font-family:'Pacifico', cursive;
+    letter-spacing: 3px;
+    color: rgb(233, 210, 255);
+}
+
+nav ul {
+    /* background-color: #333; */
+    width: 40%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}   
+
+nav ul li a {
+    color:rgb(204, 146, 255);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .88em;
+}
+
+nav ul li a:hover {
+    color:rgb(247, 237, 255);
+}
+
+
+
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #333; */
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    /* transition: .3s; */
+    display: none;
+
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -5px;
+    top: -3px;
+    z-index: 2;
+    opacity: 0;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 28px;
+    background-color: rgb(247, 237, 255);
+    border-radius: 3px;
+    transition: .3s;
+    
+}
+
+
+/* .container .sapan {
+    display: block;
+    background-color: black;
+    margin: 100px auto;
+    width: 50px;
+    height: 20px;
+} */
+
+/* hamburger button */
+
+.menu-toggle span:nth-child(2) {
+transform-origin: 0 0;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+    background-color: white;
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+    opacity: 0;
+}
+
+.menu-toggle span:last-child {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:last-child {
+    transform: rotate(-45deg) translate(-1px, 0);
+    background-color: white;
+}
+
+
+/* Responsive Breakpoint */
+
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+}
+
+
+/* ukuran mobile */
+
+@media screen and (max-width: 576px) {
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        /* display: flex; */
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        background-color: rgb(147, 91, 199);
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: -1;
+        width: 50%;
+        transform: translateX(100%);
+        transition: all .3s;
+        opacity: 0;
+    }
+
+    nav ul.slide {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

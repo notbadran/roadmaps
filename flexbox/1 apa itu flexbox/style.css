@@ -1,0 +1,58 @@
+.container {
+    width: 600px;
+    height: 400px;
+    border: 5px solid #333;
+    margin: 50px auto;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    text-align: center;
+}
+
+/* .container .satu, .dua, .tiga, .empat {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    float: left;
+    margin: 10px;
+}
+
+.clear {
+    clear: left;
+} */
+
+.container div {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin: 5px;
+}
+
+.container .dua {
+    flex: 3;
+    order: 1;
+}
+
+.container .empat {
+    align-self: flex-start;
+    flex: 4;
+    order: 2;
+}
+
+.container .satu {
+    order: 3;
+}
+
+.container .tiga {
+    order: 4;
+}
+
+/* pada dasarnya setiap element bernilai 0 untuk order, karena itu jika diberikan nilai 1 saja
+akan membuat element tersebut berada paling belakang atau akhir */
+

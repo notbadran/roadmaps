@@ -1,0 +1,173 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eaeaea;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 10px;
+  line-height: 1.65;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.container div {
+  margin: 10px;
+}
+
+.container .kolom-utama {
+  order: 2;
+  flex: 3;
+}
+
+.container .sidebar-satu {
+  order: 1;
+  flex: 1;
+  /* margin-top: 100px; */
+}
+
+/* .container .sidebar-satu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+} */
+
+/* .container .sidebar-satu a {
+  text-decoration: none;
+}  */
+
+.container .sidebar-dua {
+  order: 3;
+  flex: 1;
+}
+
+.container-dua {
+  max-width: 800px;
+  margin: 50px auto;
+  box-sizing: border-box;
+}
+
+.layanan {
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+.layanan.satu {
+  background-color: rgb(122, 122, 240);
+}
+
+.layanan.dua {
+  background-color: rgb(70, 220, 70);
+}
+
+.layanan.tiga {
+  background-color: rgb(238, 54, 54);
+}
+
+.container-tiga {
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px auto;
+  /* gap: 5px; */
+  box-sizing: border-box;
+}
+
+.container-tiga .thumbnail img {
+  width: 100%;
+}
+
+.container-tiga .thumbnail {
+  width: 25%;
+}
+
+.container-empat {
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 2px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.card .header {
+  background-color: rgb(13, 185, 13);
+  height: 100px;
+}
+
+.card .content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container-lima {
+  max-width: 400px;
+  height: 500px;
+  border: 3px solid black;
+  margin: 50px auto;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.kotak {
+  width: 100px;
+  border: 2px solid black;
+  height: 100px;
+  background-color: rgb(5, 180, 5);
+  text-align: center;
+  display: flex;
+  margin: auto;
+  /* margin-top: 250px; */
+  /* transform: translateY(-50px); */
+  /* line-height: 100px; */
+}
+/* .card.lg {
+    transform: scale(1.12);
+} */
+
+/* Responsive Breakpoint */
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .container-dua {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .layanan {
+    width: 30%;
+  }
+
+  .container-tiga .thumbnail {
+    width: 50%;
+  }
+
+  .container-empat {
+    flex-wrap: nowrap;
+  }
+
+  .card.lg {
+    transform: scale(1.12);
+  }
+
+  .card .header {
+    height: 150px;
+    background-color: rgb(13, 185, 13);
+  }
+}
