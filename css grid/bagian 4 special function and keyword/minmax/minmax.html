@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minmax | special keyword & function</title>
+
+    <style>
+
+        :root {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            color: #fff;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 500px;
+            margin: 120px auto;
+            border: 3px solid #333;
+            display: grid;
+            grid-template-columns: 100px minmax(300px, 200px) 120px;
+        }
+
+        .items {
+            background-color: rgb(230, 214, 194);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .items:nth-child(even) {
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- minmax biasanya digunakan di dalam repeat, minmax digunakan untuk memberikan nilai
+    minimal dan maksimal -->
+    
+    <div class="container">
+        <div class="items">daffa badran</div>
+        <div class="items">2</div>
+        <div class="items">atha naufal</div>
+        <!-- <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+        <div class="items">8</div>
+        <div class="items">9</div> -->
+    </div>    
+
+</body>
+</html>

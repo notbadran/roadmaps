@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>max-content | special keyword & function</title>
+
+    <style>
+
+        :root {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            font-size: 1.23rem;
+        }
+
+        .container {
+            width: min-content;
+            border: 3px solid #333;
+            margin: 150px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr max-content 1fr);
+        }
+
+        .items {
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .items:nth-child(even) {
+            background-color: chocolate;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- max content akan membuat content akan membuat kalimat/kata berada pada satu kolom tidak peduli seberapa banyak kalimat atau kata tersebut -->
+
+    <div class="container">
+        <div class="items">1</div>
+        <div class="items">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, animi?</div>
+        <div class="items">3</div>
+    </div>
+</body>
+</html>

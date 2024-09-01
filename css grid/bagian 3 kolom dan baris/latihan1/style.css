@@ -1,0 +1,28 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 600px;
+    margin: 50px auto;
+    border: 4px solid black;
+    padding: 2px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 100px 50% auto;
+    grid-template-rows: 50px 90px auto;
+}
+
+
+
+.container .item {
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .item:nth-child(even) {
+    background-color: salmon;
+}

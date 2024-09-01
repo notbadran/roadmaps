@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>auto-fit</title>
+
+    <style>
+
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            width: 500px;
+            border: 3px solid #333;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 150px);
+
+        }
+
+        .items {
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .items:nth-child(even) {
+            background-color: cadetblue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- dengan menggunakan auto-fit, grid akan berakhir pada element terakhir, lihat pada inspek dengan mengatifkan grid overlay -->
+
+    <div class="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+    </div>
+    
+</body>
+</html>
